@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('https://media.istockphoto.com/photos/white-architecture-construction-modern-interior-background-picture-id1097508768?b=1&k=20&m=1097508768&s=170667a&w=0&h=zQYf7BughFn6XlWn1q8FQATgMf6PzFvC50737gobw-E=');
+  background-size: cover;
+}
+
+@media only screen and (min-width: 700px) {
+  form, .projects {
+    border-radius: 10px;
+  }
+
+  form, .projects {
+    width: 700px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  form, .projects {
+    width: 90vw;
+    min-width: 300px;
+  }
+}
+
+#app {
+  padding: 50px 0 100px 0;
+}
+
+form {
+  margin-bottom: 100px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label,
+input,
+textarea {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  font: inherit;
+  padding: 0.2rem 0.4rem;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  background: #fffdf5;
+}
+
+button {
+  font: inherit;
+  background: #4eb9a4;
+  border: 1px solid #4eb9a4;
+  cursor: pointer;
+  color: white;
+  padding: 0.75rem 1rem;
+  width: fit-content;
+  align-self: flex-end;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover,
+button:active {
+  background: #378475;
+  border-color: #378475;
+  transition: background 1s;
+}
+
+.projects {
+  margin: 1rem 0;
+  border: 1px solid #ff0062;
+  background-color: white;
+}
+
+.projects header {
+  background: #ff0062;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+}
+
+#closed-projects {
+  border-color: grey;
+}
+
+#closed-projects header {
+  background: rgb(119, 120, 120);
+}
+
+.projects h2 {
+  margin: 0;
+  color: white;
+}
+
+.projects ul {
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+}
+
+.projects li {
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.26);
+  padding: 1rem;
+  margin: 1rem;
+  background-color: white;
+}
+
+.projects li h2 {
+  color: #ff0062;
+  margin: 0.5rem 0;
+}
+
+#closed-projects li h2 {
+  color: rgb(119, 120, 120);
+}
+
+.projects li h3 {
+  color: #575757;
+  font-size: 1rem;
+}
+
+.project li p {
+  margin: 0;
+}
+
+.droppable {
+  background: #ffe3ee;
+  transition: background .5s;
+}
+
+#closed-projects .droppable {
+  background: #ececec;
+  transition: background .5s;
+}
+
+#user-input {
+  padding: 1rem;
+  border: 1px solid #4eb9a4;
+  background: #effafc;
+}
