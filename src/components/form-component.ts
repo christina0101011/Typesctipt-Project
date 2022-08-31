@@ -1,8 +1,8 @@
-import { autobind } from "../decorators/autobind-decorator.js";
-import { FormControl } from "../models/form-control-interface.js";
-import { projectState } from "../state/project-state.js";
-import { validate } from "../utils/validation.js";
-import { BaseComponent } from "./base-component.js";
+import { autobind } from "../decorators/autobind-decorator";
+import { FormControl } from "../models/form-control-interface";
+import { projectState } from "../state/project-state";
+import { validate } from "../utils/validation";
+import { BaseComponent } from "./base-component";
 
 export class FormFactory extends BaseComponent<HTMLFormElement> {
   constructor() {

@@ -1,10 +1,10 @@
-import { autobind } from "../decorators/autobind-decorator.js";
-import { ProjectStatus } from "../enums/project-status-enum.js";
-import { DragTarget } from "../models/drag-and-drop-interface.js";
-import { projectState } from "../state/project-state.js";
-import { BaseComponent } from "./base-component.js";
-import { Project } from "./project.js";
-import { ProjectItem } from "./project-item-component.js";
+import { autobind } from "../decorators/autobind-decorator";
+import { ProjectStatus } from "../enums/project-status-enum";
+import { DragTarget } from "../models/drag-and-drop-interface";
+import { projectState } from "../state/project-state";
+import { BaseComponent } from "./base-component";
+import { Project } from "./project";
+import { ProjectItem } from "./project-item-component";
 
 export class ListFactory extends BaseComponent<HTMLElement> implements DragTarget {
   constructor(private type: "active" | "closed") {

@@ -1,4 +1,4 @@
-import { FormControl } from "../models/form-control-interface.js";
+import { FormControl } from "../models/form-control-interface";
 
 export function validate(input: FormControl) {
   let isValid = true;
